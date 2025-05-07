@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+   <html land="ru">
+       <head>
+           <link rel="stylesheet" href="styles/style.css">
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <title> Instagram Renata-Ksenia</title>
+           <script src="https://kit.fontawesome.com/1b82dada0e.js" crossorigin="anonymous"></script> 
+           <link rel="icon" href="image/favicon.png" type="image/x-icon"> 
+
+       </head>
+
+       <body >
+           <div class="box-block_sx">
+            <div id="block_sx" class="block_sx" >
+               <div id="logo"><img src="./image/logo.png" id="logoImg" /></div>
+
+               <nav class="page_management"> 
+                      <div>
+                          <i class="fa-solid fa-house"></i>
+                          <a id="home" class="navigation">Home</a>
+                      </div>
+                      <div onclick="showCerca()">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <a id="cerca" class="navigation">Cerca</a>
+                      </div>
+                      <div>
+                          <i class="fa-regular fa-compass"></i> 
+                          <a id="esplora" class="navigation">Esplora</a>        
+                      </div> 
+                      <div>
+                          <i class="fa-solid fa-clapperboard"></i>
+                          <a id="reels" class="navigation">Reels</a>
+                      </div>
+                      <div>
+                          <i class="fa-regular fa-envelope-open"></i>
+                          <a id="messaggi" class="navigation">Messaggi</a>
+                      </div>
+                      <div>
+                          <i class="fa-regular fa-heart"></i> 
+                          <a id="notifiche" class="navigation">Notifiche</a>
+                      </div>
+                      <div>
+                          <i class="fa-regular fa-square-plus"></i>
+                          <a id="crea" class="navigation">Crea</a>
+                      </div>
+                      <div id="avatar">
+                          <img src="image/avatarka.jpeg">
+                          <a id="profilo" class="navigation">Profilo</a>
+                      </div>
+                      <div>
+                          <i class="fa-regular fa-circle"></i>    
+                          <a id="meta_AI" class="navigation">Meta AI</a>      
+                      </div>
+                      <div>
+                          <i class="fa-solid fa-spinner"></i>   
+                          <a id="AI_studio" class="navigation">AI Studio</a>        
+                      </div>
+                      <div>
+                          <i class="fa-brands fa-threads"></i>
+                          <a id="threads" class="navigation">Threads</a>
+                      </div>
+                      <div>
+                          <i class="fa-solid fa-bars"></i>
+                          <a id="altro" class="navigation">Altro</a>              
+                      </div> 
+                </nav>
+             </div>
+          </div>
+             <!--Blocco sinistra - Sezione "Cerca" -->
+             <div id="box_cerca" style="display: none;">
+                  <h4 class="title_section">Cerca</h4>
+                  <div id="search-box">
+                     <input type="text" class="search" placeholder="Cerca">
+                  </div>
+                  <h5>Recente</h5>
+                  <div class="default-text-grey"><p>Nessuna ricerca recente.</p></div>
+             </div>
+
+
+             <div id="block_center">
+                <div class="wrapper">
+
+
+                      <div id="navPage">
+                          <span id="first_section">Per te </span>
+                          <span id="second_section"> Seguiti</span>
+                      </div>
+
+
+                      <div id="stories_wrapper">
+
+                          <div id="arrowDx"  onclick="rightScroll()"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                          <div id="arrowSx" onclick="leftScroll()"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                          
+                          <div id="stories" style="margin-left: 0;">
+                              <div class="user_story"> 
+                                <img src="./image/pic3.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/трактор.png">
+                                <p>instagram.namefffff</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/pic1.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/pic2.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/pic4.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/pic5.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/pic6.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/pic7.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/pic8.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/pic9.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                              <div class="user_story"> 
+                                <img src="./image/pic1.jpg">
+                                <p>instagram.name</p>
+                              </div>
+
+                          </div>
+                      </div>
+
+                      <div id="post">
+                           <div class="wrapper_post">
+                            
+                                  <div class="box_userInfo">
+                                      <div class="post_userID_sx">
+                                            <a id="userNickname" href="">
+                                                <img src="./image/avatarka.jpeg" class="post_avatar" >
+                                                <span>zuboreva.ksenia</span>
+                                            </a>
+                                            <div id="post_publication_time"></div>
+                                      </div>
+
+                                      <div class="post_userID_dx" onclick="showSettings()">
+                                        <i class="fa-solid fa-ellipsis" ></i>
+                                      </div>
+                                  </div>
+
+
+                                  <div id="box_image">
+                                     <img class="post_image" src="./image/pic6.jpg">
+                                  </div>
+
+
+                                  <div id="box_reaction">
+                                      <div class="post_reaction_sx">
+                                        <div id="like"><i class="fa-regular fa-heart"></i></div>
+                                        <div id="comment"><i class="fa-regular fa-comment"></i></div>
+                                        <div id="share"><i class="fa-regular fa-paper-plane"></i></div>
+                                      </div>
+
+                                      <div class="post_userID_dx">
+                                        <div id="save"><i class="fa-regular fa-bookmark"></i></div>
+                                      </div>
+                                  </div>
+                                
+                                  <div id="number_of_likes"></div>
+
+                                  <div id="add_comment">
+                                     <div> Aggiungi un commento...</div>
+                                     <div id="library_emojie"><i class="fa-regular fa-face-smile-beam"></i></div>
+                                  </div>
+
+                            </div>
+                        </div>
+                </div>
+             </div>
+
+
+             <div id="block_dx">
+  
+                  <div class="box_userProfile_dx">
+                    <div class="userProfile_sxINTOdx">
+                        <div><img src="./image/avatarka.jpeg" class="post_avatar_dx"></div>
+                        <div class="box_name-Description">
+                          <p class="userNickname">zuboreva.ksenia</p>
+                          <p class="description">web developer</p>
+                        </div>
+                    </div>
+
+                    <div class="userProfile_dxINTOdx">
+                      <a href="">Passa a</a>
+                    </div>
+                  </div>
+
+                  <div class="box_textGrey">
+                      <div><p class="textGreyLight">Suggeriti per te</p></div>
+                      <div><p class="textGreyDark">Mostra tutti</p></div>
+                  </div>
+                
+
+ <!--1-->         <div class="box_userProfile_dx">
+                      <div class="userProfile_sxINTOdx">
+                          <div><img src="./image/pic8.jpg" class="post_avatar_dx"></div>
+                          <div class="box_name-Description">
+                              <p class="userNickname">Sara01</p>
+                              <p class="description">friend01, 77hask + altri</p>
+                          </div>
+                      </div>
+
+                      <div class="userProfile_dxINTOdx">
+                        <a href="">Segui</a>
+                      </div>
+                  </div>
+
+ <!--2-->         <div class="box_userProfile_dx">
+                      <div class="userProfile_sxINTOdx">
+                          <div><img src="./image/pic9.jpg" class="post_avatar_dx"></div>
+                          <div class="box_name-Description">
+                              <p class="userNickname">v.lionardo</p>
+                              <p class="description">friend01, 77hask + altri</p>
+                          </div>
+                      </div>
+
+                      <div class="userProfile_dxINTOdx">
+                          <a href="">Segui</a>
+                      </div>
+                  </div>
+
+<!--3-->          <div class="box_userProfile_dx">
+                      <div class="userProfile_sxINTOdx">
+                          <div><img src="./image/pic5.jpg" class="post_avatar_dx"></div>
+                          <div class="box_name-Description">
+                              <p class="userNickname">zuboreva.ksenia</p>
+                              <p class="description">lucia.piazza, katty_1999 + altri</p>
+                          </div>
+                       </div>
+
+                       <div class="userProfile_dxINTOdx">
+                          <a href="">Segui</a>
+                       </div>
+                  </div>
+
+      <!--4-->    <div class="box_userProfile_dx">
+                      <div class="userProfile_sxINTOdx">
+                          <div><img src="./image/pic2.jpg" class="post_avatar_dx"></div>
+                          <div class="box_name-Description">
+                              <p class="userNickname">find.job</p>
+                              <p class="description">linkedin, 77hask + altri</p>
+                          </div>
+                      </div>
+
+                      <div class="userProfile_dxINTOdx">
+                         <a href="">segui</a>
+                      </div>
+                  </div>
+
+      <!--5-->    <div class="box_userProfile_dx">
+                      <div class="userProfile_sxINTOdx">
+                          <div><img src="./image/pic7.jpg" class="post_avatar_dx"></div>
+                          <div class="box_name-Description">
+                              <p class="userNickname">ravellivioletta01</p>
+                              <p class="description">friend01, 77hask + altri</p>
+                          </div>
+                      </div>
+
+                      <div class="userProfile_dxINTOdx">
+                         <a href="">Segui</a>
+                      </div>
+                  </div>
+                  
+                  <div class="contacts">
+                     <a>Informazioni ⋅ </a>
+                     <a>Aiuto ⋅ </a>
+                     <a >Stampa ⋅ </a>
+                     <a >API ⋅ </a>
+                     <a >Lavora con noi ⋅ </a>
+                     <a>Privacy ⋅ </a>
+                     <a>Condizioni ⋅ </a>
+                     <a>Luoghi ⋅ </a>
+                     <a>Lingua ⋅ </a>
+                     <a>Meta Verified ⋅ </a>
+                     
+                     <p сlass="licence">© 2025 Instagram from Meta</p>
+                  </div>
+          </div>        
+ 
+
+          <div id="overlay" class="overlay" onclick="hideSettings()" style="display: none;"></div>
+
+          <div id="settingPost" class="bottom-sheet" style="display: none;">
+              <a href="#" class="attention">Segnala</a>
+              <a href="#" class="attention">Non seguire più</a>
+              <a href="#">Aggiungi ai preferiti</a>
+              <a href="#">Vai al post</a>
+              <a href="#">Condividi su...</a>
+              <a href="#">Copia link</a>
+              <a href="#">Incorpora</a>
+              <a href="#">Informazioni su questo account</a>
+              <a href="#" onclick="hideSettings()">Annulla</a>
+          </div>
+
+    
+
+
+          <script>
+                let searchBoxStatus = false;
+
+                  function showSettings() {
+                      document.getElementById("overlay").style.display = "block";
+                      document.getElementById("settingPost").style.display = "block";
+                    }
+
+                    function hideSettings() {
+                      document.getElementById("overlay").style.display = "none";
+                      document.getElementById("settingPost").style.display = "none";
+                    }
+                   
+                    const stories = document.getElementById("stories");
+
+                     function rightScroll() {
+                        stories.scrollBy({
+                        left: 150, 
+                        behavior: 'smooth'
+                        });
+                     }
+
+                     function leftScroll() {
+                        stories.scrollBy({
+                          left: -150, 
+                          behavior: 'smooth'
+                        });
+                      }
+                      
+                     
+                      function showCerca(){
+                          const links = document.querySelectorAll(".page_management a");
+                          const boxIcon = document.getElementById("avatar");
+                          const boxLogo = document.getElementById("logo");
+                          
+
+                          links.forEach(link => {
+                              link.style.display = "none";
+                          });
+                          //document.getElementsByClassName("navigation").style.display = "none";
+                          document.getElementById("block_sx").style.width = "7%";
+                          document.getElementById("block_sx").style.paddingLeft = "0";
+                          
+                        
+                          boxIcon.style.marginRight = "0px";
+                          boxIcon.style.gap = "0px";
+
+                          document.getElementById("logoImg").style.display = "none";
+                          
+                          boxLogo.innerHTML = '<i class="fa-brands fa-instagram"></i>';
+                          boxLogo.style.marginTop = "50px";
+                          boxLogo.style.marginBottom = "50px";
+                          boxLogo.style.marginLeft = "30px";
+                          boxLogo.style.fontSize = "25px";
+                        
+                          document.getElementById("box_cerca").style.display = "block"; 
+                      }
+               
+          </script>
+
+ <!--   
+function showCerca(){
+                          const links = document.querySelectorAll(".page_management a");
+                          const boxIcon = document.getElementById("avatar");
+                          const boxLogo = document.getElementById("logo");
+
+                          if (searchBoxStatus === false) {
+                          
+                          links.forEach(link => {
+                              link.style.display = "none";
+                          });
+                          //document.getElementsByClassName("navigation").style.display = "none";
+                          document.getElementById("block_sx").style.width = "7%";
+                          document.getElementById("block_sx").style.paddingLeft = "0";
+                          
+                        
+                          boxIcon.style.marginRight = "0px";
+                          boxIcon.style.gap = "0px";
+
+                          document.getElementById("logoImg").style.display = "none";
+                          
+                          boxLogo.innerHTML = '<i class="fa-brands fa-instagram"></i>';
+                          boxLogo.style.marginTop = "50px";
+                          boxLogo.style.marginBottom = "50px";
+                          boxLogo.style.marginLeft = "30px";
+                          boxLogo.style.fontSize = "25px";
+                        
+                          document.getElementById("box_cerca").style.display = "block"; 
+                          searchBoxStatus =true;
+                        }
+                        else {
+                          searchBoxStatus = false;
+                          links.forEach(link => {
+                              link.style.display = "block";
+                              document.getElementById("block_sx").style.width = "20%";
+                              document.getElementById("block_sx").style.paddingLeft = "20px";
+                              
+
+                              document.getElementById("logoImg").style.display = "block";
+                              
+                              boxLogo.innerHTML = '<i class="fa-brands fa-instagram"></i>'.style.display = "none";
+                              boxLogo.style.marginTop = "50px";
+                              boxLogo.style.marginBottom = "50px";
+                              boxLogo.style.marginLeft = "30px";
+                              boxLogo.style.fontSize = "25px";
+                            
+                              document.getElementById("box_cerca").style.display = "none"; 
+                            });
+                        }
+                      }
+
+
+              function rightScroll(){
+                      const arrowDx = document.getElementById("arrowDx");
+                      const box = document.getElementById("stories")
+                      const limitRight = getComputedStyle(arrowDx).right === "1px"
+                      //const limitRight = arrowDx.style.marginRight === "10px";
+                       if (limitRight){
+                        arrowDx.style.display = "none";
+                       }
+                      else{
+                        let currentLeft = stories.style.marginLeft.replace("px", "");
+                        currentLeft -= 170;
+                        stories.style.marginLeft = currentLeft + "px";
+
+                          }
+                        }
+
+                 function rightScroll(){
+                      const arrowDx = document.getElementById("arrowDx");
+                      const box = document.getElementById("stories")
+                      const limitRight = getComputedStyle(arrowDx).right === "1px"
+                      //const limitRight = arrowDx.style.marginRight === "10px";
+                       if (limitRight){
+                        arrowDx.style.display = "none";
+                       }
+                      else{
+                        stories.style.transform = "translateX(-170px)";
+                        //arrow.style.marginLeft = "-170px" 
+                      }
+                    }
+
+                    function leftScroll(){
+                      const arrowSx = document.getElementById("arrowSx");
+                      const box = document.getElementById("stories")
+                      const limitLeft = getComputedStyle(arrowSx).right === "11px"
+                      
+                       if (limitLeft){
+                        arrowSx.style.display = "none";
+                       }
+                      else{
+                        stories.style.transform = "translateX(170px)"; 
+                      }
+                  }   -->
+
+
+        <!--function showSettings() {
+                  document.getElementById("settingPost").style.display = "block";
+                }
+
+                function hideSettings() {
+                  document.getElementById("settingPost").style.display = "none";
+                }-->
+       </body>
+   </html>
+
+   
+
