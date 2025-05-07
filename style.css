@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.blocks{
+   display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+   
+
+        /* navigazione */
+
+.box-block_sx{
+    transition: width .6s ease-in;
+}
+.block_sx {
+    display: inline-block;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+    border-right: .1px solid #cfcece;
+    background-color: #fff;
+    font-size: 1rem;
+    padding-left: 20px;
+    
+}
+#logo {
+    display: block;
+    width:100%;
+}
+
+#logo img{
+    width: 30%;
+    margin: 50px 0 40px 10px;
+}
+
+.page_management div{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    padding: 15px 30px 15px;
+    font-size: .9rem;
+    margin-right: 30px;
+    transition: background-color .2s linear;
+}
+.page_management div:first-child{
+    padding-top: 15px; 
+}
+.page_management div:last-child{
+    padding-bottom: 15px; 
+}
+
+.page_management div:hover{
+   background-color: #b6b4b448;
+   border-radius: 10px;
+}
+
+.page_management div:first-child{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.page_management i{
+    margin-left: 0;
+}
+.page_management img{
+    width: 25px;
+    height: 25px;
+    border: 2.3px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.navigation{
+    display: block;
+}
+        /*Blocco sinistra - Sezione "Cerca" */
+        #box_cerca{
+            width: 400px;
+            z-index: 90;
+            position: fixed;
+            top:0;
+            left: 5%;
+            bottom: 0;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        #box_cerca .title_section{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        #search-box{
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #cfcece;
+       }    
+        .search{
+            width: 100%;
+            border-radius: 10px;
+            padding: 15px 0 15px 10px;
+            background-color: #efefef;
+            border: transparent;
+            font-size: .8rem;
+            font-weight: 100;
+        }
+
+        .default-text-grey{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #a29e9e;
+            font-size: .7rem;
+            height: 100%;
+            font-weight: 600;
+        }
+
+            
+        
+
+/* BLOCCO - CENTRO */
+#block_center{
+    display: inline-block;
+    width: 70%;
+    padding-left: 20%;
+    margin: 0;
+}
+
+.wrapper{
+    margin: 0 0 50px 0;
+    width: 100%;
+    padding: 50px 0 50px 50px;
+}
+
+#navPage{
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: .1px solid #cfcece;
+    cursor: pointer;
+}
+#navPage span{
+    margin-right: 10px;
+    font-size: .7rem;
+    font-weight: 800;
+    color: rgba(199, 199, 199, 1);
+}
+
+#navPage span:first-child{
+    color: #000;
+}
+
+
+/* USERS STORIES*/
+#stories_wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+#stories{
+    display: flex;
+    padding: 20px 0 20px 10px;
+    overflow-x: hidden;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.user_story{
+    flex: 0 0 auto;
+    width: 72px;
+    height: 84px;
+    margin-right: 10px;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+.user_story img{
+    display: block;
+    width: 66px;
+    height: 66px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 3px solid transparent;
+    background:
+      linear-gradient(white, white) padding-box,
+      conic-gradient(#feda75, #fa7e1e, #d62976, #feda75) border-box;
+}
+
+.user_story p{
+    font-size: 0.5rem;
+    text-align: center;
+}
+/*Story scroll*/
+#arrowDx,
+#arrowSx{
+ position: absolute;
+ z-index: 5;
+ top: 35%;
+
+ font-size: 1.2rem;
+ color: #fff;
+ cursor: pointer;
+ 
+}
+    #arrowDx{
+    right: 10px;
+    }
+    #arrowSx{
+    left: 20px;
+    }
+
+/*POST*/
+
+.wrapper_post{
+    width: 450px;
+    margin-left: 20%;
+    border-bottom: .1px solid #cfcece; 
+}
+
+.box_userInfo{
+    display: flex;
+    justify-content: space-between;
+}
+#userNickname {
+    display: flex;
+    align-items: center;     
+    text-decoration: none;
+    color: black;
+    gap: 10px;               
+}
+.post_userID_sx a{ 
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.post_userID_dx {
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+.post_avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.post_image{
+    width: 450px;
+    margin: 15px 0;
+    border-radius: 2px;
+}
+#box_reaction,
+#add_comment{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.post_reaction_sx div{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+.post_userID_dx div{
+    font-size: 1.1rem;
+}
+
+#add_comment div{
+    font-size: .7rem;
+    font-weight: 100;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+
+/*BLOCCO DESTRA */
+
+#block_dx{
+    display: inline-block;
+    width: 20%; 
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    font-size: 1rem;
+    margin: 70px 70px 50px 70px;
+}
+
+.box_userProfile_dx,
+.box_textGrey{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.box_textGrey{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.userProfile_sxINTOdx{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.post_avatar_dx{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.box_name-Description,
+.userProfile_dxINTOdx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.userNickname{
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.description{
+    font-size: .6rem;
+    font-weight: 100;
+    color: rgb(103, 103, 103);
+}
+.userProfile_dxINTOdx a{
+    color: rgb(0, 157, 255);
+    font-size: 0.55rem;
+    font-weight: 600;
+}
+
+.userProfile_dxINTOdx a:hover{
+    color: rgb(5, 30, 145);
+}
+
+.textGreyLight{
+    color:rgb(103, 103, 103);
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.textGreyDark{
+    color:rgb(15, 15, 15);
+    font-size: .6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.textGreyDark:hover{
+    color:rgb(131, 131, 131);
+}
+
+.contacts, .contsnts_string {
+    color: #cfcece;
+    font-size: .6rem;
+}
+
+.contacts a{
+    display: inline-block;
+    color: #cfcece;
+    font-size: .6rem;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.contacts a:hover{
+    text-decoration: underline;
+}
+.contacts p{
+    margin-top: 20px;
+    text-align: left;
+}
+
+/*SETTING POST*/
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1000;
+      }
+      
+      #settingPost {
+        max-width:400px;
+        width: 100%;
+        max-height: 440px;
+        height: 100%;
+        border-radius: 20px;
+        background-color: #fff;
+        position: fixed;
+        top: calc(50% - 200px);
+        left: calc(50% - 220px);
+        z-index: 1001;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      #settingPost a{
+        text-decoration: none;
+        color: #000;
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        font-size: .8rem;
+    }
+    #settingPost a:not(:last-child){
+        border-bottom: 1px solid #cfcece;
+    }
+    
+    #settingPost a.attention{
+        color: rgb(226, 46, 46);
+        font-weight: 600;
+    }
